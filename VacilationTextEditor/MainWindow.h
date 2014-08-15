@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QPlainTextEdit>
+#include <QTabBar>
+#include <iostream>
 
 namespace Ui {
 class MainWindow;
@@ -23,8 +25,11 @@ private slots:
 
     void on_actionNovo_triggered();
 
+    void on_actionFechar_triggered();
+
 private:
     Ui::MainWindow *ui;
+    QTabWidget *tabs;
 };
 
 #endif // MAINWINDOW_H
